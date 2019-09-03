@@ -1,0 +1,14 @@
+#include <stdio.h>
+//Calcular a de quantidade dinheiro gasta por um fumante. Dados: o número de anos que ele fuma, o nº de cigarros fumados por dia e o preço de uma carteira.
+int main(void) {
+  float QA, PC, Qf;
+  printf("a quantos anos voce fuma?: ");
+  scanf("%f", &QA);
+  printf("quanto custa as carteiras de cigarro que voce compra?: ");
+  scanf("%f", &PC);
+  printf("quantas carteiras de cigarro voce fuma por dia?: ");
+  scanf("%f", &Qf);
+  printf("_____________________________________________\n\n");
+  printf("voce ja gastou cerca de R$ %3.2f", QA*PC*Qf*365);
+   return 0;
+}
