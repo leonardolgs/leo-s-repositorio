@@ -1,0 +1,22 @@
+#include <stdio.h>
+//Calcular a média final (usando a ponderação da UFRN) dadas as notas das 3 provas e produzir uma saída com a média e a situação do aluno de acordo com os critérios previstos no regulamento de graduação.
+int main(void) {
+  float n1, n2, n3, media;
+  printf("digite a sua primeira nota:");
+  scanf("%f", &n1);
+  printf("digite a segunda nota: ");
+  scanf("%f", &n2);
+  printf("digite a terceira nota: ");
+  scanf("%f", & n3);
+  printf("___________________________________\n");
+  media=(n1+n2+n3)/3;
+  printf("sua media é %3.1f\n", media);
+  printf("___________________________________\n");
+  if(media>=5 && n1>3 && n2>3 && n3>3){
+    printf("\nparabens voce esta aprovado na materia\n");
+  }
+  else{
+    printf("infelizmente voce nao passou na materia");
+  }
+  return 0;
+}
