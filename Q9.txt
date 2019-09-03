@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include<math.h>
+//Gerar o preço de um carro ao consumidor e os valores pagos pelo imposto e pelo lucro do distribuidor, sabendo o custo de fábrica do carro e que são pagos: a) de imposto: 45% sobre o custo do carro; b) de lucro do distribuidor: 12% sobre o custo do carro.
+int main(void) {
+  float P, I, T;
+  printf("___________________________________________\n\n");
+  printf("digite o valor de fabrica do carro: ");
+  scanf("%f", &P);
+  I= (P*45)/100;
+  T= (P*12)/100;
+  printf("o valor do carro é: %3.3f", P+I+T);
+  printf("\n\n____________________________________________\n\n");
+  printf("o valor dos impostos é: %3.3f\n", I);
+  printf("o lucro do vendedor é de: %3.3f", T);
+  return 0;
+}
