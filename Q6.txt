@@ -1,0 +1,14 @@
+#include <stdio.h>
+//Ler dois valores do teclado na forma de números reais, calcular e imprimir na tela:A soma destes valores,O produto deles,O quociente entre eles
+int main(void) {
+  float a,b;
+  printf("digite o primeiro numero: ");
+  scanf("%f", &a);
+  printf("digite o segundo numero: ");
+  scanf("%f", &b);
+  printf("_____________________________________\n\n");
+  printf("a soma deles é igual a: %3.2f\n", a+b);
+  printf("o produto entre eles é igual a: %3.2f\n", a*b);
+  printf("o quociente entre eles é igual a: %3.2f", a/b);
+  return 0;
+}
