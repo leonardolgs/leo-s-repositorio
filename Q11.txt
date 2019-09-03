@@ -1,0 +1,10 @@
+#include <stdio.h>
+ /*Sabendo que latão é constituído de 70% de cobre e 30% de zinco, indique a quantidade de cada um desses componentes para se obter uma certa quantidade de latão (requerida pelo usuário).*/
+int main(void) {
+  float latao;
+  printf("quantos quilos de latao voce quer fazer?: ");
+  scanf("%f", &latao);
+  printf("a quantidade de cobre necessaria é de: %3.2f kg\n\n", latao*0.70);
+  printf("a quantidade de zinco necessaria é de: %3.2f Kg", latao* 0.3);
+  return 0;
+}
