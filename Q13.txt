@@ -1,0 +1,21 @@
+#include <stdio.h>
+/*Ler três valores e determinar o maior dentre eles.*/
+int main(void) {
+  int a,b,c;
+  printf("digite o primeiro valor: ");
+  scanf("%d", &a);
+  printf("digite o segundo valor: ");
+  scanf("%d", &b);
+  printf("digete o terceiro valor: ");
+  scanf("%d", &c);
+  if(a>b && a>c){
+    printf("o primeiro numero é maior.");
+  }
+  if(b>a && b>c){
+    printf("o segundo numero é o maior.");
+  }
+  if(c>a && c>b){
+    printf("o terceiro numero é maior.");
+  }
+  return 0;
+}
