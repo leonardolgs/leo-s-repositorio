@@ -1,0 +1,16 @@
+#include <stdio.h>
+  /*Ler 2 números inteiros do teclado. Se o segundo for diferente de zero, calcular e imprimir o quociente do primeiro pelo segundo. Caso contrário, imprimir a mensagem: "DIVISÃO POR ZERO".*/
+int main(void) {
+  int a,b;
+  printf("digite o primeiro numero: ");
+  scanf("%d", &a);
+  printf("digite o segundo numero: ");
+  scanf("%d", &b);
+  if(b>0){
+    printf("o valor da divisão é: %d", a/b);
+  }
+  else{
+    printf("DIVISÂO POR ZERO");
+  }
+  return 0;
+}
