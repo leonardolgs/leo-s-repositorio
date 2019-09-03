@@ -1,0 +1,43 @@
+#include <stdio.h>
+//Ler três valores e colocá-los em ordem crescente.
+int main(void) {
+  int a,b,c, maior, medio, menor;
+  printf("digite um numero: "); scanf("%d", &a);
+  printf("digite um numero: "); scanf("%d", &b);
+  printf("digite um numero: "); scanf("%d", &c);
+  if(a>=b && a>=c){
+    maior=a;
+    if(b>=c){
+      medio=b;
+      menor=c;
+    }
+    else{
+      medio=c;
+      menor=b;
+    }
+  }
+  if(b>=a && b>=c){
+    maior=b;
+    if(a>=c){
+      medio=a;
+      menor=c;
+    }
+    else{
+      medio=c;
+      menor=a;
+    }
+  }
+  if(c>=b && c>=a){
+    maior=c;
+    if(b>=a){
+      medio=b;
+      menor=a;
+    }
+    else{
+      medio=a;
+      menor=b;
+    }
+  }
+  printf("%d > %d > %d", menor, medio, maior);
+  return 0;
+}
