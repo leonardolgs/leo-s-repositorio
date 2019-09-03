@@ -1,0 +1,28 @@
+#include <stdio.h>
+ /*Ler a velocidade máxima permitida em uma avenida e a velocidade com que o motorista estava dirigindo nela e calcule a multa que uma pessoa vai receber, sabendo que são pagos:
+50 reais se o motorista estiver ultrapassar em até 10km/h a velocidade permitida (ex.: velocidade máxima: 50km/h; motorista a 60km/h ou a 56km/h)
+100 reais, se o motorista ultrapassar de 11 a 30 km/h a velocidade permitida.
+200 reais, se estiver acima de 31km/h da velocidade permitida.*/
+int main(void) {
+int velp=0, vel=0, velm=0;
+printf("qual era a velocidade permitida: ");
+scanf("%d", & velp);
+printf("a que velocidade voce estava?: ");
+scanf("%d", & vel);
+velm = vel-velp;
+if(vel<=velp){
+  printf("ta tudo ok");
+}
+else{
+  if(velm<=10){
+    printf("voce pagara 50 reais.");
+  }
+  if(velm>10 && velm<=30){
+    printf("voce pagara 100 reais.");
+  }
+  if(velm>30){
+    printf("voce pagara 200 reais.");
+  }  
+}
+return 0;
+}
