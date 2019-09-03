@@ -1,0 +1,40 @@
+#include <stdio.h>
+/*Ler 4 números inteiros e calcular a soma dos que forem par.*/
+int main(void) {
+  int a,b,c,d;
+  int par1, par2, par3, par4;
+  printf("digite um numero: ");
+  scanf("%d", &a);
+  printf("digite um numero: ");
+  scanf("%d", &b);
+  printf("digite um numero: ");
+  scanf("%d", &c);
+  printf("digite um numero: ");
+  scanf("%d", &d);
+  if(a%2==0){
+    par1=a;
+  }
+  else{
+      par1=0;
+    }
+  if(b%2==0){
+    par2=b;
+  }
+  else{
+      par2=0;
+    }
+  if(c%2==0){
+    par3=c;
+  }
+  else{
+      par3=0;
+    }
+  if(d%2==0){
+    par4=d;
+  }
+  else{
+      par4=0;
+    }
+  printf("a soma dos numeros par é igual a: %d", par1+par2+par3+par4);
+  return 0;
+}
