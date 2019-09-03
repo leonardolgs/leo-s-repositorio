@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <math.h>
+//Ler do teclado as posições de três pontos on plano e dizer se eles formam um triângulo. Caso afirmativo, dizer seu tipo (equilátero, isósceles ou escaleno).
+int main(){
+  float x1, y1, x2, y2, x3, y3;
+  float l1, l2, l3, tmp;
+  printf("Digite o x de p1: ");
+  scanf("%f", &x1);
+  printf("Digite o y de p1: ");
+  scanf("%f", &y1);
+  printf("Digite o x de p2: ");
+  scanf("%f", &x2);
+  printf("Digite o y de p2: ");
+  scanf("%f", &y2);
+  printf("Digite o x de p3: ");
+  scanf("%f", &x3);
+  printf("Digite o y de p3: ");
+  scanf("%f", &y3);
+  l1 = sqrt( (x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+  l2 = sqrt( (x1-x3)*(x1-x3)+(y1-y3)*(y1-y3));
+  l3 = sqrt( (x3-x2)*(x3-x2)+(y3-y2)*(y3-y2));
+  if(l1 < l2){
+    tmp=l1; l1=l2; l2=tmp;
+  }
+  if(l1 < l3){
+    tmp=l1; l1=l3; l3=tmp;
+  }
+  if(l1 < l2 + l3){
+    printf("Os pontos formam um triangulo\n");
+  }
+  else{
+    printf("Os pontos NAO formam um triangulo\n");
+  }
+  if( (l1==l2)&&(l2==l3) ){
+    printf("Equilatero\n");
+  }
+  else if ((l1==l2)||(l2==l3)||(l1==l3)){
+    printf("Isoceles\n");
+  }
+  else{
+    printf("Escaleno\n");
+  }
+  return 0;
+}
